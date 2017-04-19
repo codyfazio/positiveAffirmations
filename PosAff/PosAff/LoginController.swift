@@ -19,7 +19,7 @@ class LoginController: UIViewController {
         return container
     }()
     
-    let loginRegisterButton: UIButton = {
+    lazy var loginRegisterButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = UIColor.blue.withAlphaComponent(0.8)
         button.setTitle("Register", for: .normal)
@@ -28,6 +28,8 @@ class LoginController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         button.layer.masksToBounds = true
+        
+        button.addTarget(self, action: #selector(handleUserRegistry), for: .touchUpInside)
         return button
     }()
     
@@ -173,5 +175,9 @@ class LoginController: UIViewController {
         appIconImageView.bottomAnchor.constraint(equalTo:inputsContainerView.topAnchor, constant: -12).isActive = true
         appIconImageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
         appIconImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+    }
+    
+    func handleUserRegistry() {
+        
     }
 }

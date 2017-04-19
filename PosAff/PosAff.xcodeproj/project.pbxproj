@@ -18,6 +18,7 @@
 		9B3CB75A1EA7122D00C63500 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB7011EA7122C00C63500 /* SlideInPresentationManager.swift */; };
 		9B3CB75B1EA7122D00C63500 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB7021EA7122C00C63500 /* SlideInPresentationController.swift */; };
 		9B3CB75E1EA7146D00C63500 /* SliderMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB75D1EA7146D00C63500 /* SliderMenuTableViewController.swift */; };
+		9B3CB7601EA72A0800C63500 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CB75F1EA72A0800C63500 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9B3CB7011EA7122C00C63500 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
 		9B3CB7021EA7122C00C63500 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
 		9B3CB75D1EA7146D00C63500 /* SliderMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuTableViewController.swift; sourceTree = "<group>"; };
+		9B3CB75F1EA72A0800C63500 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				9B3CB6921EA70C5B00C63500 /* Assets.xcassets */,
 				9B3CB6941EA70C5B00C63500 /* LaunchScreen.storyboard */,
 				9B3CB6971EA70C5B00C63500 /* Info.plist */,
+				9B3CB75F1EA72A0800C63500 /* GoogleService-Info.plist */,
 			);
 			path = PosAff;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3CB6961EA70C5B00C63500 /* LaunchScreen.storyboard in Resources */,
+				9B3CB7601EA72A0800C63500 /* GoogleService-Info.plist in Resources */,
 				9B3CB6931EA70C5B00C63500 /* Assets.xcassets in Resources */,
 				9B3CB6911EA70C5B00C63500 /* Main.storyboard in Resources */,
 			);

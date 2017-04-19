@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		9B3CB68C1EA70C5B00C63500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB68B1EA70C5B00C63500 /* AppDelegate.swift */; };
-		9B3CB68E1EA70C5B00C63500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB68D1EA70C5B00C63500 /* ViewController.swift */; };
+		9B3CB68E1EA70C5B00C63500 /* AffirmationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB68D1EA70C5B00C63500 /* AffirmationTableViewController.swift */; };
 		9B3CB6911EA70C5B00C63500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CB68F1EA70C5B00C63500 /* Main.storyboard */; };
 		9B3CB6931EA70C5B00C63500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CB6921EA70C5B00C63500 /* Assets.xcassets */; };
 		9B3CB6961EA70C5B00C63500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CB6941EA70C5B00C63500 /* LaunchScreen.storyboard */; };
+		9B3CB6A11EA70F8D00C63500 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB6A01EA70F8D00C63500 /* LoginController.swift */; };
+		9B3CB6A31EA710C300C63500 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB6A21EA710C300C63500 /* TabController.swift */; };
+		9B3CB7591EA7122D00C63500 /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB7001EA7122C00C63500 /* SlideInPresentationAnimator.swift */; };
+		9B3CB75A1EA7122D00C63500 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB7011EA7122C00C63500 /* SlideInPresentationManager.swift */; };
+		9B3CB75B1EA7122D00C63500 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB7021EA7122C00C63500 /* SlideInPresentationController.swift */; };
+		9B3CB75E1EA7146D00C63500 /* SliderMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB75D1EA7146D00C63500 /* SliderMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B3CB6881EA70C5B00C63500 /* PosAff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosAff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3CB68B1EA70C5B00C63500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B3CB68D1EA70C5B00C63500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B3CB68D1EA70C5B00C63500 /* AffirmationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationTableViewController.swift; sourceTree = "<group>"; };
 		9B3CB6901EA70C5B00C63500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B3CB6921EA70C5B00C63500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3CB6951EA70C5B00C63500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B3CB6971EA70C5B00C63500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3CB6A01EA70F8D00C63500 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		9B3CB6A21EA710C300C63500 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		9B3CB7001EA7122C00C63500 /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
+		9B3CB7011EA7122C00C63500 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
+		9B3CB7021EA7122C00C63500 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
+		9B3CB75D1EA7146D00C63500 /* SliderMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,51 @@
 			isa = PBXGroup;
 			children = (
 				9B3CB68B1EA70C5B00C63500 /* AppDelegate.swift */,
-				9B3CB68D1EA70C5B00C63500 /* ViewController.swift */,
+				9B3CB69F1EA70F6A00C63500 /* View */,
+				9B3CB69E1EA70F6200C63500 /* Model */,
+				9B3CB69D1EA70F5400C63500 /* Controller */,
 				9B3CB68F1EA70C5B00C63500 /* Main.storyboard */,
 				9B3CB6921EA70C5B00C63500 /* Assets.xcassets */,
 				9B3CB6941EA70C5B00C63500 /* LaunchScreen.storyboard */,
 				9B3CB6971EA70C5B00C63500 /* Info.plist */,
 			);
 			path = PosAff;
+			sourceTree = "<group>";
+		};
+		9B3CB69D1EA70F5400C63500 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B3CB75C1EA7129E00C63500 /* Presentation */,
+				9B3CB68D1EA70C5B00C63500 /* AffirmationTableViewController.swift */,
+				9B3CB6A01EA70F8D00C63500 /* LoginController.swift */,
+				9B3CB6A21EA710C300C63500 /* TabController.swift */,
+				9B3CB75D1EA7146D00C63500 /* SliderMenuTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9B3CB69E1EA70F6200C63500 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9B3CB69F1EA70F6A00C63500 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9B3CB75C1EA7129E00C63500 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9B3CB7001EA7122C00C63500 /* SlideInPresentationAnimator.swift */,
+				9B3CB7011EA7122C00C63500 /* SlideInPresentationManager.swift */,
+				9B3CB7021EA7122C00C63500 /* SlideInPresentationController.swift */,
+			);
+			name = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3CB68E1EA70C5B00C63500 /* ViewController.swift in Sources */,
+				9B3CB75A1EA7122D00C63500 /* SlideInPresentationManager.swift in Sources */,
+				9B3CB6A11EA70F8D00C63500 /* LoginController.swift in Sources */,
+				9B3CB7591EA7122D00C63500 /* SlideInPresentationAnimator.swift in Sources */,
+				9B3CB75E1EA7146D00C63500 /* SliderMenuTableViewController.swift in Sources */,
+				9B3CB68E1EA70C5B00C63500 /* AffirmationTableViewController.swift in Sources */,
+				9B3CB6A31EA710C300C63500 /* TabController.swift in Sources */,
+				9B3CB75B1EA7122D00C63500 /* SlideInPresentationController.swift in Sources */,
 				9B3CB68C1EA70C5B00C63500 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class TabController: UITabBarController {
 
@@ -21,8 +22,6 @@ class TabController: UITabBarController {
         setupControllers()
         tabBar.isHidden = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(tappedMenuButton))
-        
-    
     }
     
     //MARK: Helper Methods

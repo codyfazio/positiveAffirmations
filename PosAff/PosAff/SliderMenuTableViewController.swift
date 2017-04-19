@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SliderMenuTableViewController: UITableViewController {
 
@@ -40,6 +41,12 @@ class SliderMenuTableViewController: UITableViewController {
     
     //MARK: Helper Methods
     private func handleLogout(){
+        
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
         
         dismiss(animated: true){
             self.tabController?.present(LoginController(), animated: true, completion: nil)

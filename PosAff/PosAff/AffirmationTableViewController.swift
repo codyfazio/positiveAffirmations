@@ -13,9 +13,29 @@ class AffirmationTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkForUserAuthorization()
+    }
     
-//        let reference = FIRDatabase.database().reference(fromURL: "https://positiveaffirmations-914f2.firebaseio.com/")
-//        reference.updateChildValues(["someValues": 123123])
+    
+    //MARK: Helper Methods
+    func checkForUserAuthorization() {
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            perform(#selector(handleLogout), with: nil, afterDelay: 0.0)
+            handleLogout()
+        }
+
+    }
+    
+    func handleLogout(){
+        
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        
+        let loginController = LoginController()
+        self.tabBarController?.present(loginController, animated: true, completion: nil)
     }
 }
 

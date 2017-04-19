@@ -30,7 +30,7 @@ class LoginController: UIViewController {
         button.layer.cornerRadius = 5
         button.layer.masksToBounds = true
         
-        button.addTarget(self, action: #selector(handleUserRegistry), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
         return button
     }()
     
@@ -118,12 +118,52 @@ class LoginController: UIViewController {
         configureLoginRegisterSegmentedControl()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        loginRegisterSegmentedControl.selectedSegmentIndex = 0
+        handleLoginRegisterSelection()
+    }
+    
+    
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
     
     //MARK: Helper Methods
+    
+    func handleLoginRegister() {
+        if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
+            handleLogin()
+        } else {
+            handleUserRegistry()
+        }
+    }
+    
+    func handleLogin(){
+        guard let emailString = emailTextField.text,
+            let passwordString = passwordTextField.text else {
+                //TODO: Handle missing info for login
+                print ("Missing info")
+                return
+        }
+        
+        FIRAuth.auth()?.signIn(withEmail: emailString, password: passwordString) {user, error in
+            guard error == nil, let user = user else {
+                print(error)
+                return
+            }
+            
+            guard user.isEmailVerified else {
+                //TODO: present email verification alert
+                print("Not email verified")
+                return
+            }
+            
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
     func addGradient(startColor: UIColor, endColor: UIColor){
         
         let gradient:CAGradientLayer = CAGradientLayer()
@@ -231,7 +271,11 @@ class LoginController: UIViewController {
                 if let creationError = error{
                     print (creationError)
                 } else {
-                    self.dismiss(animated: true, completion: nil)
+                    FIRAuth.auth()?.addStateDidChangeListener({auth, user in
+                        user?.sendEmailVerification(completion: nil)
+                        //TODO: present check email for verification message
+                    })
+                    
                 }
             }
         
@@ -251,8 +295,6 @@ class LoginController: UIViewController {
             nameTextFieldHeightAnchor = nameTextField.heightAnchor.constraint(equalTo: inputsContainerView.heightAnchor, multiplier: 0)
             nameTextFieldHeightAnchor?.isActive = true
             nameTextField.isHidden = true
-            
-            print(nameTextFieldHeightAnchor)
             
             emailTextFieldHeightAnchor?.isActive = false
             emailTextFieldHeightAnchor = emailTextField.heightAnchor.constraint(equalTo: inputsContainerView.heightAnchor, multiplier: 1/2)

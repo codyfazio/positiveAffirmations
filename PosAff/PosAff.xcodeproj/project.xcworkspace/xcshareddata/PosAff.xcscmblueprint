@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F6880EBE0D1A384B9951BA312CF3ED7A75AA99AF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CE823373BB1233CEC7C652D4CA206E458637C571" : 9223372036854775807,
+    "F6880EBE0D1A384B9951BA312CF3ED7A75AA99AF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DB863093-C249-4830-87F4-3AECF896686C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CE823373BB1233CEC7C652D4CA206E458637C571" : "..",
+    "F6880EBE0D1A384B9951BA312CF3ED7A75AA99AF" : "PosAff\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PosAff",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PosAff\/PosAff.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/codyfazio\/Tipd.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CE823373BB1233CEC7C652D4CA206E458637C571"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/codyfazio\/positiveAffirmations.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F6880EBE0D1A384B9951BA312CF3ED7A75AA99AF"
+    }
+  ]
+}

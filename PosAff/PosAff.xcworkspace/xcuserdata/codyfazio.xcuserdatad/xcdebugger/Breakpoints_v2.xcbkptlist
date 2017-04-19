@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PosAff/AffirmationTableViewController.swift"
-            timestampString = "514283135.919858"
+            timestampString = "514284507.056408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,12 +42,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PosAff/AffirmationTableViewController.swift"
-            timestampString = "514283135.919858"
+            timestampString = "514284507.056408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "handleLogout()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PosAff/AffirmationTableViewController.swift"
+            timestampString = "514284507.056408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "handleLogout()"
+            landmarkName = "checkForUserAuthorization()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PosAff.AffirmationTableViewController.(checkForUserAuthorization () -&gt; ()).(closure #1)"
+                  moduleName = "PosAff"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/codyclingan/Documents/Documents%20-%20Cody%E2%80%99s%20MacBook%20Pro/Developer/iOS%20Development/PosAff/PosAff/PosAff/AffirmationTableViewController.swift"
+                  timestampString = "514284061.085123"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PosAff.AffirmationTableViewController.(checkForUserAuthorization () -&gt; ()).(closure #1)"
+                  moduleName = "PosAff"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/codyclingan/Documents/Documents%20-%20Cody%E2%80%99s%20MacBook%20Pro/Developer/iOS%20Development/PosAff/PosAff/PosAff/AffirmationTableViewController.swift"
+                  timestampString = "514284061.090458"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "510">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PosAff/AffirmationTableViewController.swift"
+            timestampString = "514284507.056408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "checkForUserAuthorization()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

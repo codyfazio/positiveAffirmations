@@ -20,6 +20,7 @@
 		9B3CB75B1EA7122D00C63500 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB7021EA7122C00C63500 /* SlideInPresentationController.swift */; };
 		9B3CB75E1EA7146D00C63500 /* SliderMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB75D1EA7146D00C63500 /* SliderMenuTableViewController.swift */; };
 		9B3CB7601EA72A0800C63500 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CB75F1EA72A0800C63500 /* GoogleService-Info.plist */; };
+		9B3CB7621EA75B0E00C63500 /* NewAffirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CB7611EA75B0E00C63500 /* NewAffirmationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9B3CB7021EA7122C00C63500 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
 		9B3CB75D1EA7146D00C63500 /* SliderMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuTableViewController.swift; sourceTree = "<group>"; };
 		9B3CB75F1EA72A0800C63500 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B3CB7611EA75B0E00C63500 /* NewAffirmationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAffirmationController.swift; sourceTree = "<group>"; };
 		E1A4F4290195D205049F9F35 /* Pods_PosAff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PosAff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F508DDB5FC6BEEEA20EDD8ED /* Pods-PosAff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PosAff.release.xcconfig"; path = "Pods/Target Support Files/Pods-PosAff/Pods-PosAff.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 			children = (
 				9B3CB75C1EA7129E00C63500 /* Presentation */,
 				9B3CB68D1EA70C5B00C63500 /* AffirmationTableViewController.swift */,
+				9B3CB7611EA75B0E00C63500 /* NewAffirmationController.swift */,
 				9B3CB6A01EA70F8D00C63500 /* LoginController.swift */,
 				9B3CB6A21EA710C300C63500 /* TabController.swift */,
 				9B3CB75D1EA7146D00C63500 /* SliderMenuTableViewController.swift */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3CB7621EA75B0E00C63500 /* NewAffirmationController.swift in Sources */,
 				9B3CB75A1EA7122D00C63500 /* SlideInPresentationManager.swift in Sources */,
 				9B3CB6A11EA70F8D00C63500 /* LoginController.swift in Sources */,
 				9B3CB7591EA7122D00C63500 /* SlideInPresentationAnimator.swift in Sources */,
@@ -439,6 +443,7 @@
 				9B3CB69C1EA70C5B00C63500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
